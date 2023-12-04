@@ -1,11 +1,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-service
+  name: ingress-myservicea
 spec:
-  ingressClassName: nginx
   rules:
-  - host: myservicea.foo.org
+    - host: myservicea.foo.org
       http:
         paths:
           - path: /
@@ -15,3 +14,4 @@ spec:
                 name: wordpress
                 port:
                   number: 80
+  ingressClassName: nginx
