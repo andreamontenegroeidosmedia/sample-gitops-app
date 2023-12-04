@@ -4,12 +4,14 @@ metadata:
   name: ingress-myservice
 spec:
   rules:
-    - http:
+    - host: website.corp
+      http:
         paths:
-          - pathType: Prefix
-            path: /wp/
+          - path: /
+            pathType: Prefix
             backend:
               service:
                 name: wordpress
                 port:
-                  number: 2080
+                  number: 80
+  ingressClassName: nginx
