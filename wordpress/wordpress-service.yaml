@@ -8,6 +8,6 @@ spec:
     app: wordpress
   ports:
     - port: 31001
-      NodePort: 31001
-      target-port: http-port
+      nodePort: 31001
+      targetPort: http-port
       protocol: TCP
