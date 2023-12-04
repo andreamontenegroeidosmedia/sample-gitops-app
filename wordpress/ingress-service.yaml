@@ -7,10 +7,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: /?(.*)
+          - path: /
             pathType: ImplementationSpecific
             backend:
               service:
                 name: wordpress
                 port:
-                  number: 3000
+                  number: 80
