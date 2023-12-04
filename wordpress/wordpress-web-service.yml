@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
     - port: 2080
-      targetPort: 2080
+      targetPort: http-port
       protocol: TCP
   selector:
     app: wordpress
