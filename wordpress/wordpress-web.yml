@@ -77,6 +77,8 @@ spec:
               name: uploads
       volumes:
         - name: uploads
+          persistentVolumeClaim:
+            claimName: db-storage
           # nfs:
           #  server: eu-west-1a.fs-5714e89e.efs.eu-west-1.amazonaws.com
           #   path: /
