@@ -4,7 +4,7 @@ metadata:
   name: ingress-myservice
 spec:
   rules:
-    - host: website.corp
+    - host: website.com
       http:
         paths:
           - path: /
