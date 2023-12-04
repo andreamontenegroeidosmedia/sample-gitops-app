@@ -13,5 +13,5 @@ spec:
               service:
                 name: wordpress
                 port:
-                  number: 80
+                  number: 1080
   ingressClassName: nginx
