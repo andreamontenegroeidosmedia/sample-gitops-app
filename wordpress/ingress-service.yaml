@@ -5,10 +5,11 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - http:
+  - host: myservicea.foo.org
+      http:
         paths:
           - path: /
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service:
                 name: wordpress
